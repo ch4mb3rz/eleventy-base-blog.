@@ -1,5 +1,5 @@
 {
-  "title": "Your Blog Name",
+  "title": "My First Blog",
   "url": "https://example.com/",
   "language": "en",
   "description": "I am writing about my experiences as a naval navel-gazer.",
@@ -14,8 +14,8 @@
     "url": "https://example.com/feed/feed.json"
   },
   "author": {
-    "name": "Your Name Here",
-    "email": "youremailaddress@example.com",
+    "name": "David Chambers",
+    "email": "davidchambers2011@hotmail.co.uk",
     "url": "https://example.com/about-me/"
   }
 }
