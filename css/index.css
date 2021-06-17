@@ -13,6 +13,13 @@
   box-sizing: border-box;
 }
 
+body  {
+  background-image: url("https://images.pexels.com/photos/3630166/pexels-photo-3630166.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+</head>
 html,
 body {
   padding: 0;
