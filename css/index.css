@@ -4,7 +4,7 @@
   --gray: #C0C0C0;
   --darkgray: #333;
   --navy: #17050F;
-  --blue: #082840;
+  --white: #082840;
   --white: #fff;
 }
 
@@ -14,10 +14,10 @@
 }
 
 body  {
-  background-image: url("https://images.pexels.com/photos/3630166/pexels-photo-3630166.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  background-image: url("https://images.pexels.com/photos/235992/pexels-photo-235992.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-repeat: no-repeat;
-  background-size: cover;
-}
+  background-size:cover;
+ }
 
 </head>
 html,
@@ -139,7 +139,7 @@ code {
 
 /* Nav */
 .nav {
-  padding: 0;
+  padding: .7em;
   list-style: none;
   float: left;
   margin-left: 1em;
