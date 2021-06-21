@@ -13,17 +13,84 @@
   </head>
   <body>
     <header>
-      <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
-
-      {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-      <ul class="nav">
-      {%- for entry in collections.all | eleventyNavigation %}
-        <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
-      {%- endfor %}
+    
+<!-- Navbar inc logo -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="https://document-export.canva.com/qwqNs/DAEhwQqwqNs/45/thumbnail/0001-3088483379.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20210618%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210618T141915Z&X-Amz-Expires=64410&X-Amz-Signature=f477876efa474b62b8dcbeaa28776fec15c63261f722ecfae64197c217c9a3a9&X-Amz-SignedHeaders=host&response-expires=Sat%2C%2019%20Jun%202021%2008%3A12%3A45%20GMT" class="" alt="Responsive image" width="100px"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+  <div class="site nav header>">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home<class="nav-link w-inline-block"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About<class="nav-link w-inline-block"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/posts">Archive<class="nav-link w-inline-block"></a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" href="/contact/contact">Contact<class="nav-link w-inline-block"></a>
+        </li>
       </ul>
+      </div>
+      </div>
+  </div>
+</nav>
+    <!-- Navbar inc logo -->
     </header>
 
     <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
+
+<!-- carousel block -->
+<div class="container-fluid">
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="3000" "style=" height: "100px"; >
+      <img src="https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="img-fluid" alt="Responsive image">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>JAMSTACK</h5>
+        <p> Dynamic static arcitechture - Javascript APIs and Markup</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="3000" >
+      <img src="https://images.pexels.com/photos/4716292/pexels-photo-4716292.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"class="img-fluid" alt="Responsive image">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Serverless website solution</h5>
+        <p>Optimize your site speed with prerendering and global delivery.</p>
+      </div>
+    </div>
+    <div class="carousel-item"data-bs-interval="3000">
+      <img src="https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?cs=srgb&dl=pexels-pixabay-60504.jpg&fm=jpg" class="img-fluid" alt="Responsive image">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Increased Security</h5>
+        <p> More secure infrastructure offers fewer points of attack</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+ </div>
+ <!-- carousel block -->
+ 
+  
 
 
       {{ content | safe }}
