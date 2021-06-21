@@ -7,17 +7,25 @@
   --white: #082840;
   --white: #fff;
 }
+.carousel-caption.d-none.d-md-block
+.p:last-child{
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  
+}
+.carousel-caption.d-none.d-md-block {
+  color: white;
+  position: center;
+  bottom: 50%;
+}
+ .container-fluid{
+  padding-left: 0px;
+  padding-right: 0px;
 
-/* Global stylesheet */
-* {
-  box-sizing: border-box;
+  justify-content: center;
 }
 
-body  {
-  background-image: url("https://images.pexels.com/photos/235992/pexels-photo-235992.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-  background-repeat: no-repeat;
-  background-size:cover;
- }
 
 </head>
 html,
@@ -31,7 +39,7 @@ body {
 p:last-child {
   margin-bottom: 0;
 }
-p,
+
 .tmpl-post li,
 img {
   max-width: 37.5em; /* 600px /16 */
@@ -46,15 +54,11 @@ a[href] {
 a[href]:visited {
   color: var(--navy);
 }
-main {
-  padding: 1rem;
-}
+
 main :first-child {
   margin-top: 0;
 }
-header {
-  border-bottom: 1px dashed var(--lightgray);
-}
+
 header:after {
   content: "";
   display: table;
@@ -128,7 +132,7 @@ code {
 
 /* Header */
 .home {
-  padding: 0 1rem;
+  padding: 1rem;
   float: left;
   margin: 1rem 0; /* 16px /16 */
   font-size: 1em; /* 16px /16 */
@@ -154,6 +158,13 @@ code {
 .nav-item-active {
   font-weight: 700;
   text-decoration: underline;
+}
+
+.navbar
+{padding-left: 1em;}
+
+.description{
+  align-items: center;
 }
 
 /* Posts list */
@@ -197,6 +208,7 @@ code {
   font-size: 1.1875em; /* 19px /16 */
   font-weight: 700;
 }
+
 
 
 /* Tags */
