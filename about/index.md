@@ -7,4 +7,6 @@ eleventyNavigation:
   order: 3
 ---
 
-I am a person that writes stuff.
+<div class="d-flex align-items-center flex-column ">
+This is a blog about me
+</div>
