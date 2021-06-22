@@ -7,7 +7,7 @@ eleventyNavigation:
   order: 5
 ---
 
-<form name="contact" method="POST" data-netlify="true">
+<form name="contact" method="POST" data-netlify="true" style="display: flex;align-items: center;flex-direction: column; margin:20px;">
   <p>
     <label>First Name: <input type="text" name="name" /></label>   
   </p>
