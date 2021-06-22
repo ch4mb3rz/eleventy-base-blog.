@@ -12,7 +12,7 @@ eleventyNavigation:
     <label>First Name: <input type="text" name="name" /></label>   
   </p>
     <p>
-    <label>Last Name: <input type="text" name="name" /></label>   
+    <label>Surname: <input type="text" name="Surname" /></label>   
   </p>
   <p>
     <label>Your Email: <input type="email" name="email" /></label>
